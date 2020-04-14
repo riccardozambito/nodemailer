@@ -1,3 +1,4 @@
-# nodemailer
+# node-nodemailer
 
-Simple Express and Nodemailer app
+Example React, Node.js, Express app to send email with module Nodemailer.
+It'sconfigured with webpack, eslint, prettier and babel.
