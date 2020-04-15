@@ -1,5 +1,5 @@
 nodemailer.createTestAccount((err, account) => {
-  // Create transporter object using the default SMTP transport
+  // Create transporter object using the default SMTP transporter
   let transporter = nodemailer.createTransport({
     host: "smtp.ethereal.email",
     port: 587,

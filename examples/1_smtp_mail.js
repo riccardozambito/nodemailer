@@ -12,7 +12,7 @@ const your_host = "smtps.myhost.com";
 // SMTP port
 const port = 465;
 
-const transport = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   host: your_host,
   secure: true,
   // Connection will use TLS when connecting to server.
@@ -43,7 +43,7 @@ const mailOptions = {
   ],
 };
 
-transport.sendMail(mailOptions, (error, response) => {
+transporter.sendMail(mailOptions, (error, response) => {
   error ? console.log(error) : console.log(response);
   //
   if (smtpTransport) smtpTransport.quit();

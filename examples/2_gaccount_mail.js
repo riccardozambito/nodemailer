@@ -22,7 +22,7 @@ oauth2Client.setCredentials({
 
 const accessToken = oauth2Client.getAccessToken();
 
-const transport = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     type: "OAuth2",
@@ -49,7 +49,7 @@ const mailOptions = {
   ],
 };
 
-transport.sendMail(mailOptions, (error, response) => {
+transporter.sendMail(mailOptions, (error, response) => {
   error ? console.log(error) : console.log(response);
   //
   if (smtpTransport) smtpTransport.quit();
