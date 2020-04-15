@@ -34,7 +34,7 @@ If you want to use a SMTP service leave blank `guser` and assign right values to
 ## Start
 
 ```bash
-# Start development server
+# Start development server (
 npm run dev
 
 # Build for production
