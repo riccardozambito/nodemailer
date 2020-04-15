@@ -1,0 +1,7 @@
+{
+  "guser": "Your google user",
+  "refreshToken": "Google refresh token",
+  "smtpServer": "SMTP host server",
+  "smtpUser": "SMTP user",
+  "smtpPass": "SMTP password"
+}

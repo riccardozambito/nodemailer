@@ -1,2 +1,3 @@
 node_modules
 src/server/service/mailer/credentials.json
+dist
