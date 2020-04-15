@@ -29,7 +29,7 @@ To can send emails you need rename [config-sample.json](https://github.com/ricca
 
 To send emails with your Google account assign right values to `guser` and `refreshToken`. Then put downloaded **credential JSON** into [../server/service/mailer](https://github.com/riccardozambito/nodemailer/tree/master/src/server/service/mailer).
 
-If you want to use a SMTP service   assign right values to `smtpServer`, `smtpUser` and `smtpPass`.
+If you want to use a SMTP service leave blank `guser` and assign right values to `smtpServer`, `smtpUser` and `smtpPass`.
 
 ## Start
 
