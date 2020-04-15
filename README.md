@@ -4,7 +4,7 @@
 Example React, Node.js, Express app to send email with module Nodemailer.
 It's configured with webpack, eslint, prettier and babel.
 
-The [Examples folder](https://github.com/riccardozambito/nodemailer/tree/master/examples) contains the final source code of ["Send emails with Node.js module Nodemailer" gist](https://gist.github.com/riccardozambito/fe259690d0c766e6e29a72f095f5efa9).
+The [Examples folder](https://github.com/riccardozambito/nodemailer/tree/master/examples) contains the final source code of ["Send emails with Node.js module Nodemailer" gist](https://gist.github.com/riccardozambito/8c96ca5b9decf011f77f51a1d65eef4d).
 
 
 ## Structure
