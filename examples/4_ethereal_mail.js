@@ -1,6 +1,6 @@
 nodemailer.createTestAccount((err, account) => {
-  // Create transport object using the default SMTP transport
-  let transport = nodemailer.createTransport({
+  // Create transporter object using the default SMTP transporter
+  let transporter = nodemailer.createTransport({
     host: "smtp.ethereal.email",
     port: 587,
     secure: false,
@@ -10,7 +10,7 @@ nodemailer.createTestAccount((err, account) => {
     },
   });
 
-  transport.sendMail(mailOptions, (info) => {
+  transporter.sendMail(mailOptions, (info) => {
     console.log("Preview URL: " + nodemailer.getTestMessageUrl(info));
   });
 });

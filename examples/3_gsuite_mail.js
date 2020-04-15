@@ -8,7 +8,7 @@ const send_to = "sender@domain.com";
 
 const credentials = require("./credentials.json");
 
-const transport = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
   secure: true,
@@ -35,7 +35,7 @@ const mailOptions = {
   ],
 };
 
-transport.sendMail(mailOptions, (error, response) => {
+transporter.sendMail(mailOptions, (error, response) => {
   error ? console.log(error) : console.log(response);
   //
   if (smtpTransport) smtpTransport.quit();
