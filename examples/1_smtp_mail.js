@@ -20,7 +20,7 @@ const transport = nodemailer.createTransport({
   // for port 587 or 25 keep it false
   port: 465,
   auth: {
-    // Should be replaced with real sender's account
+    // It should be replaced with real sender's account
     // Note: in code that go into production is extremely recommended
     // encrypt those data or use environment variables
     user: "user@domain.com",
@@ -35,9 +35,9 @@ const mailOptions = {
   html: "You will find your invoice attached",
   attachments: [
     {
-      // Should be replaced with the attachment name that you want the customer show
+      // It should be replaced with the name  to be reported as the name of the attached file
       filename: "your invoice.pdf",
-      // Should be replaced with your real path file
+      // It should be replaced with your real path file
       path: process.cwd() + "/generated_invoices/customer_id/invoice.pdf",
     },
   ],
